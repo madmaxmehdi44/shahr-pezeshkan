@@ -1,0 +1,125 @@
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eeeeee;
+  padding: 0 15%;
+  padding-top: 6px;
+  font-weight: 500;
+}
+@media only screen and (max-width: 700px) {
+  #header {
+    flex-direction: column;
+  }
+}
+#header > div {
+  padding: 4px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.searchbox {
+  display: flex;
+  justify-content: center;
+  background: white;
+  padding: 4px 10px;
+  border-radius: 3px;
+
+  -webkit-box-shadow: 0 0 3px 0 #ccc; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 0 0 3px 0 #ccc; /* Firefox 3.5 - 3.6 */
+  box-shadow: 0 0 3px 0 #ccc; /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+.searchbox input {
+  border: none;
+  outline: none;
+}
+.searchbox input::placeholder {
+  color: #777777;
+  font-size: 14px;
+}
+.searchbox svg {
+  color: #777777;
+}
+.icon {
+  width: 28px;
+  height: 28px;
+}
+.icon-sm {
+  width: 21px;
+  height: 21px;
+}
+
+.nav-item {
+  color: "white";
+  text-decoration: none;
+  padding: 10px;
+}
+
+.btn {
+  width: 160px;
+  height: 30px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  background: #004e7c;
+  padding: 2px 8px;
+  border-radius: 6px;
+  border: 2px solid white;
+  cursor: pointer;
+  display: block;
+}
+.link:hover {
+  background: white;
+  color: #004e7c;
+  border: 2px solid #004e7c;
+}
+.delete {
+  text-decoration: none;
+  color: white;
+  background: #e22323;
+  padding: 2px 8px;
+  border-radius: 6px;
+  border: 2px solid white;
+  cursor: pointer;
+  display: block;
+}
+.delete:hover {
+  background: white;
+  color: #e22323;
+  border: 2px solid #e22323;
+}
+
+.pswp__img {
+  object-fit: contain;
+}
+
+/* user  */
